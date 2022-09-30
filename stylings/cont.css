@@ -1,0 +1,12 @@
+form{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin: 10px;
+    align-items: center;
+}
+input[type="text"], input[type="email"], input[type="submit"]{
+    width: 50%;
+    margin: 5px auto;
+}

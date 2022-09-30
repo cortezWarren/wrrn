@@ -1,0 +1,97 @@
+var fs = require("fs");
+
+// fs.mkdir("stuff", function () {
+//   fs.readFile("readMe.txt", "utf8", function (err, data) {
+//     fs.writeFile("./stuff/write.txt", data, function (err) {
+//       if (err) throw err;
+//       console.log("file saved!");
+//     });
+//   });
+// });
+
+// fs.unlink("./stuff/write.txt", function () {
+//   fs.rmdir("stuff", function (err) {
+//     if (err) {
+//       throw err;
+//     }
+//     console.log("file removed");
+//   });
+// });
+
+// var http = require("http");
+
+// var server = http.createServer(function (req, res) {
+//   console.log("request was made: " + req.url);
+//   //   var myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8");
+
+// var whHtml = function (statsCode, contType) {
+//   res.writeHead(statsCode, { "Content-Type": `${contType}` });
+// };
+
+// var cReadStream = function (fileName) {
+//   fs.createReadStream(__dirname + fileName).pipe(res);
+// };
+
+//   if (req.url === "/home" || req.url === "/") {
+//     whHtml(200);
+//     cReadStream("/index.html");
+//   } else if (req.url === "/contact") {
+//     whHtml(200);
+//     cReadStream("/contact.html");
+//   } else if (req.url === "/json") {
+//     var myObj = {
+//       name: "haryy",
+//       job: "wizard",
+//       age: 22,
+//     };
+
+//     whHtml(200);
+//     res.end(JSON.stringify(myObj));
+//   } else {
+//     whHtml(404);
+//     cReadStream("/errorpage.html");
+//   }
+//   //   myReadStream.pipe(res);
+
+//   //   res.end(JSON.stringify(myObj));
+// });
+
+// server.listen(3000, "127.0.0.1");
+// console.log("now listening");
+
+// var myWriteStrem = fs.createWriteStream(__dirname + "/direct/write.txt");
+
+// fs.mkdir("stuff", function () {
+//   myStream.on("data", function (chunk) {
+//     console.log("new chunk received");
+//     myWriteStrem.write(chunk);
+//   });
+// });
+
+// fs.mkdir("direct", function () {
+//   myReadStream.pipe(myWriteStrem);
+// });
+// fs.unlink("./stuff/write.txt", function () {
+//   fs.rmdir("stuff", (err) => {
+//     if (err) throw err;
+//     console.log("file removed");
+//   });
+// });
+
+// var express = require("express");
+
+// var app = express();
+
+// app.get("/home", function (req, res) {
+//   res.sendFile(__dirname + "/index.html");
+// });
+
+// app.get("/contact", function (req, res) {
+//   res.sendFile(__dirname + "/contact.html");
+// });
+
+// app.get("/profile/:name", function (req, res) {
+//   res.send("hello " + req.params.name);
+// });
+
+// app.listen(3000);

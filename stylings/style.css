@@ -1,0 +1,14 @@
+ body {
+     background: skyblue;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-align: center;
+ }
+
+ h1 {
+     text-transform: uppercase;
+     letter-spacing: 13px;
+ }
+
+ p {
+     font-size: 18px;
+ }
